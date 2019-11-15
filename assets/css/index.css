@@ -1,12 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+h1, h2,h3{
+	margin: 10px 0px 0px 0px;;
+}
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
     color: #776E65;
-    background-color: #fff;
+	background-color: #fff;
+	margin: 0;
 }
 footer{
     text-align:center;
-    letter-spacing: 2px;
+	letter-spacing: 2px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 #content{
     width: 100%;
@@ -33,7 +43,6 @@ footer{
 	text-align: center;
 	width: 100%;
 	display: inline-block;
-	margin: 10px 0px 0px 0px;
 }
 #title{
 	width: 100%;
@@ -45,22 +54,25 @@ footer{
 }
 #board{
 	width: auto;
-	position: relative;
-	padding: 3px 0px 0px 3px;
+	padding: 10px 0px 0px 10px;
 }
 #board .row{
 	padding: 0px;
+	height: 33px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 #board .row .cell{
-	margin: -3px;
 	padding: 0px;
-	height: 33px;
-	width: 33px;
-	display: inline-block;
+	max-width: 33px;
+	min-width: 33px;
+	max-height: 33px;
+    min-height: 33px;
+	display: inline-flex;
 	background-color: #fff;
-	position: relative;
-;}
+}
 #board .row .cell:hover{
 	box-shadow: inset 0px 0px 6px green,
 				inset 0px 0px 2px green,
