@@ -7,9 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/index.css">
     <script src="assets/js/jquery-3.4.1.min.js"></script>
-    <script src="assets/js/index.js"></script>
     <script src="assets/js/sweetalert.js"></script>
+    <script src="assets/js/sigma.min.js"></script>
+    <script src="assets/js/sigma.plugins.animate.min.js"></script>
+    <script src="assets/js/sigma.parsers.gexf.min.js"></script>
+    <script src="assets/js/index.js"></script>
     <title>Proyecto FInal | ECCI</title>
+
 </head>
 
 <body>
@@ -61,7 +65,87 @@
             </div>
         </div>
 
+        <div id="botones" class="col-md-6">
+                <button class="btn btn-success" id="Validar">Validar <span class="glyphicon glyphicon-check"></span></button>
+                <table class="table" >
+        
+        <div id="table" class="mt10"> 
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Relación</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>reflexiva</td>
+                        <td><span id="reflexiva" class="glyphicon glyphicon-question-sign"></span></td>
+                    </tr>
+                    <tr>
+                        <td>irreflexiva</td>
+                        <td><span id="irreflexiva" class="glyphicon glyphicon-question-sign"></span></td>
+                    </tr>
+                    <tr>
+                        <td>simétrica</td>
+                        <td><span id="simetrica" class="glyphicon glyphicon-question-sign"></span></td>
+                    </tr>
+                    <tr>
+                        <td>asimétrica</td>
+                        <td><span id="asimetrica" class="glyphicon glyphicon-question-sign"></span></td>
+                    </tr>
+                    <tr>
+                        <td>antisimétrica</td>
+                        <td><span id="antisimetrica" class="glyphicon glyphicon-question-sign"></span></td>
+                    </tr>
+                    <tr>
+                        <td>transitiva.</td>
+                        <td><span id="transitiva" class="glyphicon glyphicon-question-sign"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+      <div class="content-validacion">
+        <table class="table-fill">
+            <thead>
+                <tr>
+                    <th class="text-left">Relación</th>
+                    <th class="text-left"></th>
+                </tr>
+            </thead>
+            <tbody class="table-hover">
+                <tr>
+                    <td class="text-left">Reflexiva</td>
+                    <td class="text-left">$ 50,000.00</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Irreflexiva</td>
+                    <td class="text-left">$ 10,000.00</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Simétrica</td>
+                    <td class="text-left">$ 85,000.00</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Asimétrica</td>
+                    <td class="text-left">$ 56,000.00</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Antisimétrica</td>
+                    <td class="text-left">$ 98,000.00</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Transitiva</td>
+                    <td class="text-left">$ 98,000.00</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="content-grafo"></div>
+      </div>
+    <button class="back-to-top" type="button">VALIDAR</button>
     </div>
 </body>
+
 
 </html>
